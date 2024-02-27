@@ -1,5 +1,4 @@
-# Résumé de la Vidéo sur Docker et SQL - Data Engineering Zoomcamp
-
+# Résumé de la Vidéo sur Docker et SQL
 ## Introduction à Docker Compose
 - Docker Compose permet de configurer plusieurs conteneurs dans un seul fichier YAML, simplifiant la gestion de réseaux partagés et de configurations.
 - Avantage : réduit la complexité des commandes Docker pour exécuter plusieurs services.
