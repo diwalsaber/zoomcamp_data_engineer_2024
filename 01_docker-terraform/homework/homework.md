@@ -56,7 +56,7 @@ How many taxi trips were totally made on September 18th 2019?
 Tip: started and finished on 2019-09-18. 
 
 Remember that `lpep_pickup_datetime` and `lpep_dropoff_datetime` columns are in the format timestamp (date and hour+min+sec) and not in date.
-```
+```SQL
 SELECT count(*)
 FROM yellow_taxi_trips
 WHERE DATE(lpep_pickup_datetime) = '2019-09-18'
@@ -84,7 +84,7 @@ Consider lpep_pickup_datetime in '2019-09-18' and ignoring Borough has Unknown
 
 Which were the 3 pick up Boroughs that had a sum of total_amount superior to 50000?
 
-````
+```SQL
 SELECT b."Borough"
 FROM yellow_taxi_trips y
 JOIN boroughs b ON y."PULocationID" = b."LocationID"
@@ -93,7 +93,7 @@ AND b."Borough" <> 'Unknown'
 GROUP BY b."Borough"
 HAVING SUM(y.total_amount) > 50000
 ORDER BY SUM(y.total_amount) DESC
-````
+```
 - "Bronx" "Manhattan" "Queens" 
 
 ## Question 6. Largest tip
@@ -103,7 +103,7 @@ We want the name of the zone, not the id.
 
 Note: it's not a typo, it's `tip` , not `trip`
 
-```
+```SQL
 SELECT 
     b_dropoff."Zone" AS dropoff_zone, 
     y.tip_amount AS tip
