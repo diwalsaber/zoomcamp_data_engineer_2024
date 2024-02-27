@@ -1,27 +1,38 @@
-# Résumé de la Vidéo sur Docker et SQL
-## Introduction à Docker Compose
-- Docker Compose permet de configurer plusieurs conteneurs dans un seul fichier YAML, simplifiant la gestion de réseaux partagés et de configurations.
-- Avantage : réduit la complexité des commandes Docker pour exécuter plusieurs services.
+# Docker and PostGreSQL
 
-## Installation de Docker Compose
-- **Mac et Windows** : Docker Compose est inclus avec Docker Desktop.
-- **Linux** : Nécessite une installation manuelle.
+## Introduction to Docker Compose
+- Docker Compose is used for configuring multiple containers within a single YAML file, simplifying the management of shared networks and configurations.
+- Benefit: reduces the complexity of Docker commands required to run multiple services.
 
-## Configuration avec Docker Compose
-- Création d'un fichier `docker-compose.yaml` pour configurer PostgreSQL et pgAdmin.
-- **Services configurés** :
-  - **PostgreSQL** : définition de l'image, variables d'environnement, mappages de volumes, et mappages de ports.
-  - **pgAdmin** : définition de l'image, variables d'environnement, et mappages de ports.
+## Installing Docker Compose
+- **Mac and Windows**: Docker Compose is included with Docker Desktop.
+- **Linux**: Requires manual installation.
 
-## Exécution avec Docker Compose
-- Lancement des services avec la commande `docker-compose up`.
-- Accès à pgAdmin via un navigateur pour se connecter à la base de données PostgreSQL.
+## Configuration with Docker Compose
+- Creating a `docker-compose.yaml` file to configure PostgreSQL and pgAdmin.
+- **Configured Services**:
+  - **PostgreSQL**: Definition of image, environment variables, volume mappings, and port mappings.
+  - **pgAdmin**: Definition of image, environment variables, and port mappings.
 
-## Commandes Importantes
-- **Lancer Docker Compose** : `docker-compose up`
-- **Arrêter Docker Compose** : `docker-compose down`
-- **Mode détaché** : Ajouter l'option `-d` pour exécuter en arrière-plan. `docker-compose up -d`
+## Execution with Docker Compose
+- Launching services with the `docker-compose up` command.
+- Accessing pgAdmin through a browser to connect to the PostgreSQL database.
 
-## Avantages de Docker Compose
-- Simplifie la gestion de configurations multiples.
-- Facilite les expériences locales et les tests d'intégration.
+## Useful Docker Management Commands
+- **List running containers**: `docker ps`
+- **List all containers (running and stopped)**: `docker ps -a`
+- **Stop a running container**: `docker stop [container_id or names]`
+- **Remove a container**: `docker rm [container_id or names]`
+- **Pull a Docker image**: `docker pull [image_name]`
+- **Build a Docker image**: `docker build -t [image_name] .`
+- **View local Docker images**: `docker images`
+- **Remove a Docker image**: `docker rmi [image_name]`
+
+## Important Commands
+- **Start Docker Compose**: `docker-compose up`
+- **Stop Docker Compose**: `docker-compose down`
+- **Detached mode**: Add the `-d` option to run in the background.
+
+## Advantages of Docker Compose
+- Simplifies the management of multiple configurations.
+- Facilitates local experiments and integration testing.
