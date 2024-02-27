@@ -142,7 +142,35 @@ terraform apply
 ```
 
 Paste the output of this command into the homework submission form.
+```hcl
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
+following symbols:
+  + create
 
+Terraform will perform the following actions:
+
+  # google_bigquery_dataset.dataset will be created
+  + resource "google_bigquery_dataset" "dataset" {
+      + creation_time              = (known after apply)
+      + dataset_id                 = "terraform_dataset_415611"
+      + delete_contents_on_destroy = false
+      + etag                       = (known after apply)
+      + id                         = (known after apply)
+      + labels                     = (known after apply)
+      + last_modified_time         = (known after apply)
+      + location                   = "EU"
+      + project                    = "terraform-project-415611"
+      + self_link                  = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+```
 
 ## Submitting the solutions
 
