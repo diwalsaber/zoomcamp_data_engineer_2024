@@ -71,7 +71,7 @@ Use the pick up time for your calculations.
 
 Tip: For every trip on a single day, we only care about the trip with the longest distance. 
 
-```
+```SQL
 SELECT DATE(lpep_pickup_datetime)
 FROM yellow_taxi_trips
 WHERE trip_distance = (SELECT max(trip_distance) FROM yellow_taxi_trips);

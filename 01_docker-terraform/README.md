@@ -112,10 +112,10 @@ resource "google_storage_bucket" "demo_bucket" {
 `terraform plan` and `apply` commands are used to preview and apply changes respectively.
 
 ## Terraform Commands Highlighted
-- terraform fmt to format your .tf files for better readability.
-- terraform plan to preview the changes Terraform will make.
-- terraform apply to apply the changes defined in your Terraform configuration.
-- terraform destroy to remove the resources defined in the Terraform configuration.
+- `terraform fmt` to format your .tf files for better readability.
+- `terraform plan` to preview the changes Terraform will make.
+- `terraform apply` to apply the changes defined in your Terraform configuration.
+- `terraform destroy` to remove the resources defined in the Terraform configuration.
 
 ## Security and Best Practices
 Sensitive Data Handling: The video underscores the importance of carefully managing sensitive information, such as service account keys, to avoid security breaches.
